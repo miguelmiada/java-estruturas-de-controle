@@ -6,27 +6,56 @@ public class Main {
         
         var scanner = new Scanner(System.in);
 
-        System.out.println("Digite o seu nome :  ");
-        var nome = scanner.nextLine();
-        System.out.println("Digite a sua idade ");
-        var age = scanner.nextInt();
+        System.out.println("Informe um numero de 1 a 7 : ");
+        var option = scanner.nextInt();
 
-        System.out.println("Digite (s/n) se você é emancipado: ");
-        var isEmancipated = scanner.next().equalsIgnoreCase("s");
+        switch (option) {
 
-        
-        var canDrive = (age >= 18 || (age >=16 && isEmancipated));
-        if (canDrive) {
-           
-            System.out.printf("Olá %s, vc tem %s anos e você pode dirigir \n", nome, age);
-        
+            case 1:
+            case 7:
+                System.out.println("Fim de semana");
+                break;
+            case 2:
+                System.out.println("Segunda-feira");
+                break;
+            case 3:
+                System.out.println("Terça-feira");
+                break;
+            case 4:
+                System.out.println("Quarta-feira");
+                break;
+            case 5:
+                System.out.println("Quinta-feira");
+                break;
+                
+            case 6:
+                System.out.println("Sexta-feira");
+                break;
     
-        } else {
-             System.out.printf("Olá %s, vc tem %s anos e você NÃO pode dirigir \n", nome, age);
-
-              System.out.printf("FIM DE EXECUÇÃO\n");
+                default:
+                System.out.println("Opção inválida");
+                
+            
         }
-
     }
 }
+
+
+
+
+//*
+//  case 1 -> System.out.println("Domingo");
+//  case 2 -> System.out.println("Segunda-feira");
+//  case 3 -> System.out.println("Terça-feira");
+//  case 4 -> System.out.println("Quarta-feira");
+//  case 5 -> System.out.println("Quinta-feira");
+//  case 6 -> System.out.println("Sexta-feira");
+//  case 7 -> System.out.println("Sábado");
+// default -> System.out.println("Opção inválida");
+//   outra forma de fazer o switch case (n ultiliza o break), funciona em alguns java só 
+// */
+
+
+
+
    
