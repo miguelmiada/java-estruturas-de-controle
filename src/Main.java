@@ -1,31 +1,20 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
-        
-        var scanner = new Scanner(System.in);
 
-        var name = "";
+        var i = 0;
+        while (args.length > i) {
+            System.out.println(args[i]);
+            i++;
+        }
+
+        i = 0;
+
+        System.out.println("===========================================");
+
         do {
-     
-
-            System.out.println("Informe o seu nome: ");
-            name = scanner.next();
-            System.out.println(name);
-
-            if(name.equalsIgnoreCase("exit")) break;
-
-        
-
-
-        }while(true);
-        
+            System.out.println(args[i]);
+            i++;
+        } while (args.length > i);
     }
 }
-
-
-
-
-
-   
