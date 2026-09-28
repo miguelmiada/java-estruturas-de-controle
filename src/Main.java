@@ -6,8 +6,17 @@ public class Main {
         
         var scanner = new Scanner(System.in);
 
-        for (var i = 0; i < args.length; i++) {
-            System.out.println((i + 1) + " - " + args[i]);
+        var name = "";
+        while (true) {
+     
+
+            System.out.println("Informe o seu nome: ");
+            name = scanner.next();
+            System.out.println(name);
+
+            if(name.equalsIgnoreCase("exit")) break;
+
+
         }
         
     }
