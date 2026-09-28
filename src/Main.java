@@ -7,7 +7,7 @@ public class Main {
         var scanner = new Scanner(System.in);
 
         var name = "";
-        while (true) {
+        do {
      
 
             System.out.println("Informe o seu nome: ");
@@ -16,8 +16,10 @@ public class Main {
 
             if(name.equalsIgnoreCase("exit")) break;
 
+        
 
-        }
+
+        }while(true);
         
     }
 }
