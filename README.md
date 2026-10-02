@@ -1,65 +1,68 @@
-# ☕ Java Training
+# ☕ Java - Estruturas de Controle
 
-Repositório criado para registrar meus estudos e exercícios práticos em **Java**, desenvolvendo minha lógica de programação e aprofundando meus conhecimentos na linguagem.
+Exercícios práticos do curso **Estruturas de Controle em Java**, parte do **Bootcamp Itaú - Java com Inteligência Artificial** (DIO).
 
 
-## 📚 Conteúdos a praticar: 
 
-* Variáveis e tipos de dados
-* Entrada e saída de dados
-* `Scanner`
-* Operadores
-* Estruturas condicionais
+Praticando as estruturas de controle de fluxo do Java:
 
-  * `if / else`
-  * operadores lógicos
-* Estruturas de repetição
+- Operações aritméticas
+- Condicionais (`if / else if / else`)
+- `switch case`
+- Laços de repetição: `for`, `while` e `do while`
+- Controle de laço com `continue`
+- Validação de entrada com `Scanner`
 
-  * `for`
-  * `while`
-  * `do while`
-* Métodos
-* Classes e objetos
-* Programação Orientada a Objetos (POO)
-* Arrays
-* `ArrayList`
-* Tratamento de exceções
-* Manipulação de Strings
-* Collections
-* Exercícios de lógica de programação
+## 📂 Estrutura
 
 ```
-## 💻 Exemplos de exercícios
-
-### Verificação de idade
-
-Um dos exercícios verifica se uma pessoa pode dirigir considerando sua idade e se é emancipada.
-
-```java
-var canDrive = age >= 18 || (isEmancipated && age >= 16);
+Hello/
+├── src/
+│   ├── Tabuada.java
+│   ├── Imc.java
+│   ├── ParesImpares.java
+│   └── DivisaoResto.java
+├── .gitignore
+└── README.md
 ```
 
-Esse exercício trabalha:
+## 📝 Exercícios
 
-* Entrada de dados com `Scanner`
-* Variáveis
-* Operadores relacionais
-* Operadores lógicos
-* Estruturas de decisão
+### 1. Tabuada (`Tabuada.java`)
+O usuário informa um número e o programa exibe a tabuada de 1 a 10.
 
-## 🚀 Próximos estudos
+### 2. Cálculo de IMC (`Imc.java`)
+O usuário informa peso e altura. O programa calcula `IMC = peso / (altura * altura)` e exibe a classificação:
 
-* [ ] Revisar fundamentos de Java
-* [ ] Praticar métodos
-* [ ] Praticar arrays
-* [ ] Estudar POO
-* [ ] Criar exercícios utilizando classes e objetos
-* [ ] Trabalhar com `ArrayList`
-* [ ] Estudar Collections
-* [ ] Criar pequenos projetos em Java
-* [ ] Desenvolver uma aplicação utilizando banco de dados
+| IMC | Resultado |
+|---|---|
+| ≤ 18,5 | Abaixo do peso |
+| 18,6 a 24,9 | Peso ideal |
+| 25,0 a 29,9 | Levemente acima do peso |
+| 30,0 a 34,9 | Obesidade Grau I |
+| 35,0 a 39,9 | Obesidade Grau II (Severa) |
+| ≥ 40,0 | Obesidade III (Mórbida) |
+
+Também valida que peso e altura sejam maiores que zero.
+
+### 3. Pares ou ímpares em um intervalo (`ParesImpares.java`)
+O usuário informa dois números (o segundo maior que o primeiro) e escolhe entre pares ou ímpares. O programa lista os números do intervalo escolhido, **incluindo os extremos e em ordem decrescente**.
+
+### 4. Verificação por resto da divisão (`DivisaoResto.java`)
+O usuário informa um número inicial e depois vários outros números. O programa continua enquanto o resto da divisão for `0`. Números menores que o primeiro são ignorados com `continue`.
+
+## ▶️ Como executar
+
+Pré-requisito: **JDK 17+** instalado.
 
 
-## 📌 Sobre o repositório
+## 🛠️ Tecnologias
 
-Este projeto faz parte da minha rotina de prática em programação e será atualizado conforme avanço nos estudos de Java.
+- Java
+- Git / GitHub
+- VS Code
+
+
+## 👤 Autor
+
+**Miguel Miada**
